@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --main-color: hsl(30, 54%, 90%) ;
+    --sec-color:  hsl(0, 0%, 100%);
+    --thir-color: hsl(14, 45%, 36%);
+    --prep-color: hsl(332, 51%, 32%);
+    --prep-back: hsl(330, 100%, 98%);
+    --head-color: hsl(24, 5%, 18%);
+    --text-color:  hsl(30, 10%, 34%);
+    --final: hsl(30, 18%, 87%);
+}
+
+body {
+    background-color: var(--main-color);
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-color);
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+strong {
+    font-weight: 700;
+}
+
+hr {
+    background-color: var(--final);
+}
+
+main {
+    max-width: 37.5rem;
+    margin: 4rem auto;
+    background-color: var(--sec-color);
+    padding: 3%;
+    border-radius: 0.8rem;
+}
+
+.cover-image {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.title, .subtitle {
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+}
+
+.title {
+    color: var(--head-color);
+}
+
+.subtitle {
+    color: var(--thir-color);
+}
+
+.prep-time {
+    background-color: var(--prep-back);
+    padding: 2%;
+    border-radius: 0.3rem;
+}
+
+.prep-time p {
+    color: var(--prep-color);
+    font-weight: 700;
+    
+}
+
+.prep-time ul {
+    padding-left: 2%;
+}
+
+/* to targert the list dots */
+.prep-time li::marker {
+    color: var(--prep-color);
+    font-size: small;
+}
+
+
+.ingredients li::marker {
+    color: var(--thir-color);
+    font-size: small;
+}
+
+
+.ingredients ul {
+    padding-left: 3%;
+}
+
+.instructions li::marker {
+    color: var(--thir-color);
+    font-weight: 600;
+}
+
+
+
+table {
+    width: 100%;
+}
+
+
+ .tvalue {
+    color: var(--thir-color);
+    font-weight: 600;
+} 
+
+
