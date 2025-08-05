@@ -11,6 +11,13 @@
     --final: hsl(30, 18%, 87%);
 }
 
+/* To Reset the Document Padding and Margins */
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: var(--main-color);
     font-family: 'Outfit', sans-serif;
@@ -19,19 +26,21 @@ body {
     font-weight: 400;
 }
 
-strong {
+b {
     font-weight: 700;
 }
 
 hr {
     background-color: var(--final);
+    height: 0.063rem;
+    border: none;
 }
 
 main {
-    max-width: 37.5rem;
-    margin: 4rem auto;
+    max-width: 45rem;
+    margin: 6rem auto;
     background-color: var(--sec-color);
-    padding: 3%;
+    padding: 1.8em;
     border-radius: 0.8rem;
 }
 
@@ -47,6 +56,7 @@ main {
 
 .title {
     color: var(--head-color);
+    margin-bottom: 0;
 }
 
 .subtitle {
@@ -65,8 +75,10 @@ main {
     
 }
 
+
+
 .prep-time ul {
-    padding-left: 2%;
+    padding-left: 1.4em;
 }
 
 /* to targert the list dots */
@@ -83,8 +95,9 @@ main {
 
 
 .ingredients ul {
-    padding-left: 3%;
+    padding-left: 1.2em;
 }
+
 
 .instructions li::marker {
     color: var(--thir-color);
@@ -92,15 +105,58 @@ main {
 }
 
 
+.instructions ol {
+    padding-left: 1.2em;
+}
+
+.list-item-content {
+    margin-left: 0.8em;
+}
 
 table {
     width: 100%;
+    border-collapse: collapse;
+}
+ 
+tr {
+    border-bottom: 0.063rem solid var(--final);
 }
 
+tr:last-of-type {
+    border: none;
+}
 
- .tvalue {
+td {
+    padding: 0.5em;
+}
+
+ td:last-of-type {
     color: var(--thir-color);
     font-weight: 600;
 } 
 
+@media screen and (max-width: 48rem) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    main {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 0;
+    }
 
+    .cover-image {
+        position: absolute;
+        border-radius: 0;
+        top: 0;
+        left: 0;
+        
+    }
+
+    .title {
+        margin-top: 50%;
+    }
+}
